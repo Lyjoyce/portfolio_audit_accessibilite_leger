@@ -7,12 +7,15 @@
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
     background-color: var(--color-button);
-    color: #ffffff;
+    color: var(--color-white);
     text-decoration: none;
     border-radius: 6px;
 }
 
 .button:hover,
 .button:focus {
-    background-color: var(--color-button-hover);
+    background-color: var(--background-soft);
+    color:var(--color-button-hover);
+    font-weight: 600;
+    border: 2px solid var(--color-button-hover);
 }
