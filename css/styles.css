@@ -1,24 +1,10 @@
 /* =========================================================
    Couleurs & typographie (charte contrastée et accessible)
-
-   Fond principal : #f9f9f9 (blanc cassé)
-   Fond secondaire : #f0f0f0
-   Séparations : #e0e0e0
-
-   Texte principal : #000000
-   Texte secondaire : #2b2b2b
-   Texte atténué : #555555
-
-   Accent principal : bleu nuit #1f2a44
-   Boutons hover : #141c2f
-
-   Typographie :
-   Sans-serif système (pas de Google Fonts)
    ========================================================= */
 
 :root {
-    /* Couleurs de base */
-     --color-accent-gold: #bfa25a;  
+    /* Couleurs */
+    --color-accent-gold: #bfa25a;
     --color-white: #ffffff;
     --color-black: #000000;
 
@@ -60,7 +46,7 @@ body {
 }
 
 /* =========================================================
-   Skip link (accessibilité)
+   Skip link
    ========================================================= */
 
 .skip-link {
@@ -141,4 +127,30 @@ h2 {
     padding: 2rem 1rem;
     font-size: 0.9rem;
     color: var(--color-text-muted);
+}
+
+/* =========================================================
+   Responsive mobile
+   ========================================================= */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* légèrement plus lisible */
+    }
+
+    .section {
+        padding: 1rem 1.5rem; /* plus d'espace horizontal */
+    }
+
+    .encadre {
+        padding: 1rem 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
 }

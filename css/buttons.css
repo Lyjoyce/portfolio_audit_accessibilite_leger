@@ -10,6 +10,9 @@
     color: var(--color-white);
     text-decoration: none;
     border-radius: 6px;
+
+    /* transition douce */
+    transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .button:hover,
@@ -17,7 +20,17 @@
     background-color: var(--color-button-hover);
     text-decoration: underline;
 }
+
 .button:focus-visible {
     outline: 2px solid var(--color-button-hover);
     outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    .button {
+        width: 100%;         /* boutons pleine largeur pour mobile */
+        text-align: center;  /* texte centré */
+        padding: 0.8rem 1rem; /* un peu plus de padding vertical */
+        box-sizing: border-box;
+    }
 }
